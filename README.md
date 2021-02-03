@@ -2,10 +2,11 @@
 Learning companion notes 
 
 ## Views vs Copies in Numpy/Pandas
-Views do not own any data, but "views" original data. So modifying original also modifies view
-Copies become independent from original data
+Views do not own any data, but "views" original data. So modifying original also modifies view.
 
-Views are handy for saving memory space and reducing runtime 
+Copies become independent from original data.
+
+Views are handy for saving memory space and reducing runtime.
 
 
 ### Copies and views in Numpy
@@ -13,4 +14,5 @@ In numpy we can check whether a variable is copy or view with `variable.flags.ow
 
 #### 1-D array
 Slicing operation returns views
-masking and integer indexing operations return copies
+
+Masking and integer indexing operations return copies
