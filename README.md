@@ -10,11 +10,13 @@ Views are handy for saving memory space and reducing runtime.
 
 
 ### Copies and views in Numpy
-In numpy we can check whether a variable is copy or view with `variable.flags.owndata` property of the `variable' 
+In numpy we can check whether a variable is copy or view with `variable.flags.owndata` property of the `variable` 
+
+Assignments always modify original array
 
 #### 1-D array
 3 ways to reference array contents: (1) slicing, (2) integer indexing or (3) masking:
 
 Slicing operation returns views.
 
-Integer indexing and masking operations return copies
+Integer indexing and masking (boolean indexing) operations return copies
